@@ -1,0 +1,135 @@
+﻿<Window x:Class="DrivingSchool.Windows.UserData"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DrivingSchool.Windows"
+        mc:Ignorable="d"
+        Title="Данные пользователя" 
+        Height="600" 
+        Width="600"
+        WindowStartupLocation="CenterScreen">
+    <Grid
+        Background="#4375BF">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Image Source="/Resources/driving_school.png"
+               Height="100"
+               Width="100"
+               Grid.Row="0"
+               HorizontalAlignment="Left"
+               Margin="20"/>
+        <TextBlock
+            FontSize="24"
+            Grid.Row="0"
+            Foreground="White"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Bottom" Margin="0,0,0,59">
+            Данные пользователя
+        </TextBlock>
+
+        <TextBlock
+            x:Name="tbId"
+            FontSize="20"
+            Grid.Row="0"
+            Margin="5"
+            Foreground="White"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top">
+            id:
+        </TextBlock>
+
+        <StackPanel
+            x:Name="spMain"
+            Grid.Row="1">
+            
+                <TextBlock
+                HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                TextWrapping="NoWrap"
+                FontSize="22"
+                Width="auto"
+                FontWeight="Bold"
+                Text="ФИО: "/>
+
+            <TextBox
+                x:Name="tbFIO"
+                Background="Transparent"
+                BorderThickness="0"
+                TextWrapping="NoWrap"
+                FontSize="22"
+                HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                Width="auto"
+                IsEnabled="False"
+                FontWeight="Bold"
+                Text="ФИО: "/>
+
+                <TextBlock
+                HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                TextWrapping="NoWrap"
+                FontSize="22"
+                Width="auto"
+                FontWeight="Bold"
+                Text="Телефон: "/>
+
+            <TextBox
+                x:Name="tbPhone"
+                Background="Transparent"
+                BorderThickness="0"
+                HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                TextWrapping="NoWrap"
+                Width="auto"
+                IsEnabled="False"
+                FontSize="22"
+                FontWeight="Bold"
+                Text="Телефон: "/>
+
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                TextWrapping="NoWrap"
+                FontSize="22"
+                Width="auto"
+                FontWeight="Bold"
+                Text="Email: "/>
+
+            <TextBox
+                    x:Name="tbEmail"
+                    Background="Transparent"
+                    BorderThickness="0"
+                    IsEnabled="False"
+                    Width="auto"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    TextWrapping="NoWrap"
+                    FontSize="22"
+                    FontWeight="Bold"
+                    Text="Email: "/>
+
+
+        </StackPanel>
+        
+        <StackPanel
+                Grid.Row="2"
+                HorizontalAlignment="Center"
+                Orientation="Horizontal">
+            <Button
+                    x:Name="btnGoBack"
+                    FontSize="18"
+                    Margin="0 0 15 0"
+                    Content="Назад" Click="btnGoBack_Click"/>
+            <Button
+                    x:Name="btnChange"
+                    FontSize="18"
+                    Margin="15 0 0 0"
+                    Content="Изменить" Click="btnChange_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,58 @@
+﻿<Window x:Class="DrivingSchool.Windows.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DrivingSchool.Windows"
+        mc:Ignorable="d"
+        Title="Регистрация" 
+        Height="600" 
+        Width="600"
+        WindowStartupLocation="CenterScreen">
+    <Grid
+        Background="#4375BF">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Image Source="/Resources/driving_school.png"
+               Height="80"
+               Width="80"
+               Grid.Row="0"
+               HorizontalAlignment="Left"
+               Margin="10"/>
+        <TextBlock
+            FontSize="24"
+            Grid.Row="0"
+            Foreground="White"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center">
+            Регистрация
+        </TextBlock>
+
+        <Frame
+            Grid.Row="1"
+            x:Name="frRegistration"
+            NavigationUIVisibility="Hidden">
+            
+        </Frame>
+        <StackPanel
+                Grid.Row="2"
+                HorizontalAlignment="Center"
+                Orientation="Horizontal">
+            <Button
+                    x:Name="btnGoBack"
+                    FontSize="18"
+                    Margin="0 0 15 0"
+                    Content="Назад" 
+                    Click="btnGoBack_Click"/>
+            <Button
+                    x:Name="btnProceed"
+                    FontSize="18"
+                    Margin="15 0 0 0"
+                    Content="Продолжить" 
+                    Click="btnProceed_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

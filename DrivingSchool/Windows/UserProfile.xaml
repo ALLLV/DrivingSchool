@@ -1,0 +1,78 @@
+﻿<Window x:Class="DrivingSchool.Windows.UserProfile"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DrivingSchool.Windows"
+        mc:Ignorable="d"
+        Title="Личный кабинет" 
+        Height="600" 
+        Width="600"
+        WindowStartupLocation="CenterScreen">
+    <Grid
+        Background="#4375BF">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Image Source="/Resources/driving_school.png"
+               Height="100"
+               Width="100"
+               Grid.Row="0"
+               HorizontalAlignment="Left"
+               Margin="20"/>
+        <TextBlock
+            FontSize="24"
+            Grid.Row="0"
+            Foreground="White"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Bottom" Margin="0,0,0,59">
+            Личный кабинет
+        </TextBlock>
+
+        <TextBlock
+            x:Name="tbId"
+            FontSize="20"
+            Grid.Row="0"
+            Margin="5"
+            Foreground="White"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top">
+            id: 
+        </TextBlock>
+
+        <StackPanel
+            Grid.Row="1">
+            
+            <Button
+                x:Name="btnUserData"
+                Margin="0 20 0 0"
+                Width="300"
+                FontSize="24"
+                Content="Данные пользователя" Click="btnUserData_Click"/>
+
+            <Button
+                x:Name="btnMakeAppointment"
+                Margin="0 40 0 0"
+                Width="300"
+                FontSize="24"
+                Content="Записаться на занятие" Click="btnMakeAppointment_Click"/>
+
+            <Button
+                x:Name="btnAppointmentHistory"
+                Margin="0 40 0 0"
+                Width="300"
+                FontSize="24"
+                Content="История занятий" Click="btnAppointmentHistory_Click"/>
+
+            <Button
+                x:Name="btnExit"
+                Margin="0 80 0 0"
+                Width="200"
+                FontSize="24"
+                Content="Выйти" Click="btnExit_Click"/>
+
+        </StackPanel>
+        
+    </Grid>
+</Window>

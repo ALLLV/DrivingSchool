@@ -1,0 +1,60 @@
+﻿<Page x:Class="DrivingSchool.Pages.RegistrationPage1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DrivingSchool.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="600"
+      Title="RegistrationPage1"
+      ShowsNavigationUI="False">
+
+    <Grid>
+        <StackPanel
+            VerticalAlignment="Top"
+            Orientation="Vertical">
+            <TextBlock
+                FontSize="24"
+                Foreground="White"
+                Margin="0 0 0 10"
+                HorizontalAlignment="Center">
+                Email
+            </TextBlock>
+            <TextBox
+                x:Name="tbxEmail">
+
+            </TextBox>
+
+            <TextBlock
+                FontSize="24"
+                Foreground="White"
+                Margin="0 5 0 10"
+                HorizontalAlignment="Center">
+                Пароль
+            </TextBlock>
+            <PasswordBox
+                x:Name="pbxPassword"/>
+
+            <TextBlock
+                FontSize="24"
+                Foreground="White"
+                Margin="0 5 0 10"
+                HorizontalAlignment="Center">
+                Подтвердите пароль
+            </TextBlock>
+            <PasswordBox
+                x:Name="pbxPasswordConfirm"/>
+
+            <TextBlock
+                FontSize="24"
+                Foreground="White"
+                Margin="0 5 0 10"
+                HorizontalAlignment="Center">
+                Номер телефона
+            </TextBlock>
+            <TextBox
+                x:Name="tbxPhone"/>
+        </StackPanel>
+
+    </Grid>
+</Page>

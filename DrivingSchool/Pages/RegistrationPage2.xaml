@@ -1,0 +1,70 @@
+﻿<Page x:Class="DrivingSchool.Pages.RegistrationPage2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DrivingSchool.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="600"
+      Title="RegistrationPage2"
+      ShowsNavigationUI="False">
+
+    <Grid>
+        <StackPanel
+            VerticalAlignment="Top"
+            Orientation="Vertical">
+            <TextBlock
+                FontSize="24"
+                Foreground="White"
+                Margin="0 0 0 10"
+                HorizontalAlignment="Center">
+                Фамилия
+            </TextBlock>
+            <TextBox
+                x:Name="tbxLastName">
+
+            </TextBox>
+
+            <TextBlock
+                FontSize="24"
+                Foreground="White"
+                Margin="0 5 0 10"
+                HorizontalAlignment="Center">
+                Имя
+            </TextBlock>
+            <TextBox
+                x:Name="tbxFirstName"/>
+
+            <TextBlock
+                FontSize="24"
+                Foreground="White"
+                Margin="0 5 0 10"
+                HorizontalAlignment="Center">
+                Отчество*
+            </TextBlock>
+            <TextBox
+                x:Name="tbxMiddleName"/>
+
+            <TextBlock
+                FontSize="24"
+                Foreground="White"
+                Margin="0 5 0 10"
+                HorizontalAlignment="Center">
+                Пол
+            </TextBlock>
+            <ComboBox
+                VerticalContentAlignment="Center"
+                Height="50"
+                Width="350"
+                x:Name="cbxGender">
+                <TextBlock
+                    FontSize="24"
+                    Text="Мужской"/>
+                <TextBlock 
+                    FontSize="24"
+                    Text="Женский"/>
+            </ComboBox>
+        </StackPanel>
+
+    </Grid>
+</Page>
